@@ -1,12 +1,14 @@
 from selenium import webdriver
 import time
 
-chrome_driver_path = r"C:\Users\Beno\Development\chromedriver"
+chrome_driver_path = r"C:\Users\Beno\Development\chromedriver" # Link to the chromedriver application
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 # Open chrome and the website itself
 # Insert the name of the website
-driver.get("") # Full link of the website
+
+# Example
+driver.get("https://zapper.fi/dashboard") # Full link of the website 
 
 # Wait until the website is fully loaded
 time.sleep(5)
